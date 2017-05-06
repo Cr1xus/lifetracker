@@ -1,0 +1,1094 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D87B6ECDF63CD23632CB20 /* Pods_LifeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2BB9314CCCE1C4E2FA8159 /* Pods_LifeTracker.framework */; };
+		A20597FC1E84618A00452D61 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20597FA1E84618A00452D61 /* Interface.storyboard */; };
+		A20597FE1E84618A00452D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20597FD1E84618A00452D61 /* Assets.xcassets */; };
+		A20598051E84618A00452D61 /* LifeTrackerWatches Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20598041E84618A00452D61 /* LifeTrackerWatches Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A205980E1E84618A00452D61 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205980D1E84618A00452D61 /* ExtensionDelegate.swift */; };
+		A20598101E84618A00452D61 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205980F1E84618A00452D61 /* NotificationController.swift */; };
+		A20598121E84618A00452D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20598111E84618A00452D61 /* Assets.xcassets */; };
+		A20598161E84618A00452D61 /* LifeTrackerWatches.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A20597F81E84618A00452D61 /* LifeTrackerWatches.app */; };
+		A20598221E84691300452D61 /* LTInitialInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20598211E84691300452D61 /* LTInitialInterfaceController.swift */; };
+		A22172E81E982A5C0034BD61 /* ExerciseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172E71E982A5C0034BD61 /* ExerciseDataManager.swift */; };
+		A22172EB1E9830A00034BD61 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172EA1E9830A00034BD61 /* ExerciseTableViewCell.swift */; };
+		A22172EE1E98D5930034BD61 /* LTProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172ED1E98D5930034BD61 /* LTProgressIndicator.swift */; };
+		A22172F01E98D5AE0034BD61 /* LTProgressIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22172EF1E98D5AE0034BD61 /* LTProgressIndicator.xib */; };
+		A22172F21E98D68C0034BD61 /* LTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172F11E98D68C0034BD61 /* LTBaseViewController.swift */; };
+		A22172F41E9957460034BD61 /* LTExerciseDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172F31E9957460034BD61 /* LTExerciseDetailTableViewController.swift */; };
+		A22172F61E996DE00034BD61 /* LTHammerBicepsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22172F51E996DE00034BD61 /* LTHammerBicepsCalculator.swift */; };
+		A285B1A41E9118CD0092BA77 /* LTExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A285B1A31E9118CD0092BA77 /* LTExerciseInterfaceController.swift */; };
+		A2BAF6811E96EB880096919A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2BAF67F1E96EB880096919A /* Model.xcdatamodeld */; };
+		A2BAF6881E96EEA60096919A /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAF6861E96EEA60096919A /* Exercise+CoreDataClass.swift */; };
+		A2BAF6891E96EEA60096919A /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAF6871E96EEA60096919A /* Exercise+CoreDataProperties.swift */; };
+		A2BAF68A1E96EF0E0096919A /* NSPersistentStoreCoordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAF6841E96EBEB0096919A /* NSPersistentStoreCoordinator+Extension.swift */; };
+		A2DA322A1E8EE2B200C34E94 /* LTWorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32271E8EE2B200C34E94 /* LTWorkoutManager.swift */; };
+		A2DA322B1E8EE2B200C34E94 /* LTMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32281E8EE2B200C34E94 /* LTMotionManager.swift */; };
+		A2DA322C1E8EE2B200C34E94 /* LTRunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32291E8EE2B200C34E94 /* LTRunningBuffer.swift */; };
+		A2DA32301E8EE2C300C34E94 /* LTBicepsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA322D1E8EE2C300C34E94 /* LTBicepsCalculator.swift */; };
+		A2DA32311E8EE2C300C34E94 /* LTCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA322E1E8EE2C300C34E94 /* LTCalculator.swift */; };
+		A2DA32321E8EE2C300C34E94 /* LTCalculatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA322F1E8EE2C300C34E94 /* LTCalculatorManager.swift */; };
+		A2DA32361E8EE2E900C34E94 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DA32351E8EE2E900C34E94 /* HealthKit.framework */; };
+		A2DA32381E8EEC5200C34E94 /* LTWorkoutRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32371E8EEC5200C34E94 /* LTWorkoutRowController.swift */; };
+		A2DA323A1E8EED4D00C34E94 /* LTExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32391E8EED4D00C34E94 /* LTExercise.swift */; };
+		A2DA323B1E8EED5400C34E94 /* LTExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA32391E8EED4D00C34E94 /* LTExercise.swift */; };
+		A2DA323F1E8EEE6600C34E94 /* LTExerciseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA323E1E8EEE6600C34E94 /* LTExerciseType.swift */; };
+		A2DA32401E8EEE6600C34E94 /* LTExerciseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA323E1E8EEE6600C34E94 /* LTExerciseType.swift */; };
+		A2EB3B351E7876EA00601DE4 /* LTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB3B341E7876EA00601DE4 /* LTAppDelegate.swift */; };
+		A2EB3B371E7876EA00601DE4 /* LTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB3B361E7876EA00601DE4 /* LTViewController.swift */; };
+		A2EB3B3A1E7876EA00601DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB3B381E7876EA00601DE4 /* Main.storyboard */; };
+		A2EB3B3C1E7876EA00601DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EB3B3B1E7876EA00601DE4 /* Assets.xcassets */; };
+		A2EB3B3F1E7876EA00601DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB3B3D1E7876EA00601DE4 /* LaunchScreen.storyboard */; };
+		A2EB3B521E7D6A6B00601DE4 /* LTHealthSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = A2EB3B501E7D6A6B00601DE4 /* LTHealthSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2EB3B551E7D6A6B00601DE4 /* LTHealthSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EB3B4E1E7D6A6A00601DE4 /* LTHealthSupport.framework */; };
+		A2EB3B561E7D6A6B00601DE4 /* LTHealthSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2EB3B4E1E7D6A6A00601DE4 /* LTHealthSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2EB3B661E80658E00601DE4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EB3B651E80658E00601DE4 /* HealthKit.framework */; };
+		A2EB3B681E80667B00601DE4 /* LTHealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB3B671E80667B00601DE4 /* LTHealthKitManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20598061E84618A00452D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EB3B291E7876EA00601DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20598031E84618A00452D61;
+			remoteInfo = "LifeTrackerWatches Extension";
+		};
+		A20598141E84618A00452D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EB3B291E7876EA00601DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20597F71E84618900452D61;
+			remoteInfo = LifeTrackerWatches;
+		};
+		A2EB3B531E7D6A6B00601DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EB3B291E7876EA00601DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EB3B4D1E7D6A6A00601DE4;
+			remoteInfo = LTHealthSupport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A205981C1E84618A00452D61 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A20598051E84618A00452D61 /* LifeTrackerWatches Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A205981E1E84618A00452D61 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A20598161E84618A00452D61 /* LifeTrackerWatches.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B5A1E7D6A6B00601DE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A2EB3B561E7D6A6B00601DE4 /* LTHealthSupport.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		271CFFC23DBE3216365CF95A /* Pods-LifeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeTracker/Pods-LifeTracker.release.xcconfig"; sourceTree = "<group>"; };
+		2F2BB9314CCCE1C4E2FA8159 /* Pods_LifeTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58669467BCDB14E399B16DEC /* Pods-LifeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeTracker/Pods-LifeTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A20597F81E84618A00452D61 /* LifeTrackerWatches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTrackerWatches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20597FB1E84618A00452D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A20597FD1E84618A00452D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20597FF1E84618A00452D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20598041E84618A00452D61 /* LifeTrackerWatches Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LifeTrackerWatches Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205980A1E84618A00452D61 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A205980D1E84618A00452D61 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A205980F1E84618A00452D61 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A20598111E84618A00452D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20598131E84618A00452D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20598211E84691300452D61 /* LTInitialInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTInitialInterfaceController.swift; sourceTree = "<group>"; };
+		A22172E71E982A5C0034BD61 /* ExerciseDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDataManager.swift; sourceTree = "<group>"; };
+		A22172EA1E9830A00034BD61 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		A22172ED1E98D5930034BD61 /* LTProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTProgressIndicator.swift; sourceTree = "<group>"; };
+		A22172EF1E98D5AE0034BD61 /* LTProgressIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTProgressIndicator.xib; sourceTree = "<group>"; };
+		A22172F11E98D68C0034BD61 /* LTBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBaseViewController.swift; sourceTree = "<group>"; };
+		A22172F31E9957460034BD61 /* LTExerciseDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTExerciseDetailTableViewController.swift; sourceTree = "<group>"; };
+		A22172F51E996DE00034BD61 /* LTHammerBicepsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHammerBicepsCalculator.swift; sourceTree = "<group>"; };
+		A285B1A31E9118CD0092BA77 /* LTExerciseInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTExerciseInterfaceController.swift; sourceTree = "<group>"; };
+		A2BAF6801E96EB880096919A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A2BAF6841E96EBEB0096919A /* NSPersistentStoreCoordinator+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPersistentStoreCoordinator+Extension.swift"; sourceTree = "<group>"; };
+		A2BAF6861E96EEA60096919A /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A2BAF6871E96EEA60096919A /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A2DA32271E8EE2B200C34E94 /* LTWorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTWorkoutManager.swift; sourceTree = "<group>"; };
+		A2DA32281E8EE2B200C34E94 /* LTMotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTMotionManager.swift; path = "LifeTrackerWatches Extension/LTMotionManager.swift"; sourceTree = SOURCE_ROOT; };
+		A2DA32291E8EE2B200C34E94 /* LTRunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTRunningBuffer.swift; sourceTree = "<group>"; };
+		A2DA322D1E8EE2C300C34E94 /* LTBicepsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBicepsCalculator.swift; sourceTree = "<group>"; };
+		A2DA322E1E8EE2C300C34E94 /* LTCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTCalculator.swift; path = "LifeTrackerWatches Extension/LTCalculator.swift"; sourceTree = SOURCE_ROOT; };
+		A2DA322F1E8EE2C300C34E94 /* LTCalculatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCalculatorManager.swift; sourceTree = "<group>"; };
+		A2DA32341E8EE2E900C34E94 /* LifeTrackerWatches Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LifeTrackerWatches Extension.entitlements"; sourceTree = "<group>"; };
+		A2DA32351E8EE2E900C34E94 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		A2DA32371E8EEC5200C34E94 /* LTWorkoutRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTWorkoutRowController.swift; sourceTree = "<group>"; };
+		A2DA32391E8EED4D00C34E94 /* LTExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTExercise.swift; sourceTree = "<group>"; };
+		A2DA323E1E8EEE6600C34E94 /* LTExerciseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTExerciseType.swift; sourceTree = "<group>"; };
+		A2EB3B311E7876EA00601DE4 /* LifeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB3B341E7876EA00601DE4 /* LTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAppDelegate.swift; sourceTree = "<group>"; };
+		A2EB3B361E7876EA00601DE4 /* LTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTViewController.swift; sourceTree = "<group>"; };
+		A2EB3B391E7876EA00601DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2EB3B3B1E7876EA00601DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LifeTracker/Assets.xcassets; sourceTree = "<group>"; };
+		A2EB3B3E1E7876EA00601DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2EB3B401E7876EA00601DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = LifeTracker/Info.plist; sourceTree = "<group>"; };
+		A2EB3B4E1E7D6A6A00601DE4 /* LTHealthSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTHealthSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB3B501E7D6A6B00601DE4 /* LTHealthSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTHealthSupport.h; sourceTree = "<group>"; };
+		A2EB3B511E7D6A6B00601DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EB3B641E80658E00601DE4 /* LifeTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LifeTracker.entitlements; path = LifeTracker/LifeTracker.entitlements; sourceTree = "<group>"; };
+		A2EB3B651E80658E00601DE4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A2EB3B671E80667B00601DE4 /* LTHealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHealthKitManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20598011E84618A00452D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DA32361E8EE2E900C34E94 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B2E1E7876EA00601DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB3B661E80658E00601DE4 /* HealthKit.framework in Frameworks */,
+				A2EB3B551E7D6A6B00601DE4 /* LTHealthSupport.framework in Frameworks */,
+				15D87B6ECDF63CD23632CB20 /* Pods_LifeTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B4A1E7D6A6A00601DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		124AC1A15BD9F241C0AFA2D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58669467BCDB14E399B16DEC /* Pods-LifeTracker.debug.xcconfig */,
+				271CFFC23DBE3216365CF95A /* Pods-LifeTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		856700454BF53061124B1138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA32351E8EE2E900C34E94 /* HealthKit.framework */,
+				A2EB3B651E80658E00601DE4 /* HealthKit.framework */,
+				2F2BB9314CCCE1C4E2FA8159 /* Pods_LifeTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A20597F91E84618A00452D61 /* LifeTrackerWatches */ = {
+			isa = PBXGroup;
+			children = (
+				A20597FA1E84618A00452D61 /* Interface.storyboard */,
+				A20597FD1E84618A00452D61 /* Assets.xcassets */,
+				A20597FF1E84618A00452D61 /* Info.plist */,
+			);
+			path = LifeTrackerWatches;
+			sourceTree = "<group>";
+		};
+		A20598081E84618A00452D61 /* LifeTrackerWatches Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A285B1A61E911D4D0092BA77 /* Model */,
+				A285B1A51E911D370092BA77 /* Controller */,
+				A205980D1E84618A00452D61 /* ExtensionDelegate.swift */,
+				A20598091E84618A00452D61 /* Supporting Files */,
+			);
+			path = "LifeTrackerWatches Extension";
+			sourceTree = "<group>";
+		};
+		A20598091E84618A00452D61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA32341E8EE2E900C34E94 /* LifeTrackerWatches Extension.entitlements */,
+				A20598131E84618A00452D61 /* Info.plist */,
+				A20598111E84618A00452D61 /* Assets.xcassets */,
+				A205980A1E84618A00452D61 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A22172E91E98306C0034BD61 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				A22172EC1E98D5750034BD61 /* ProgressIndicator */,
+				A22172EA1E9830A00034BD61 /* ExerciseTableViewCell.swift */,
+			);
+			name = CustomControls;
+			sourceTree = "<group>";
+		};
+		A22172EC1E98D5750034BD61 /* ProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A22172ED1E98D5930034BD61 /* LTProgressIndicator.swift */,
+				A22172EF1E98D5AE0034BD61 /* LTProgressIndicator.xib */,
+			);
+			name = ProgressIndicator;
+			sourceTree = "<group>";
+		};
+		A285B1A51E911D370092BA77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A285B1A81E911D850092BA77 /* Notification */,
+				A285B1A71E911D780092BA77 /* Row */,
+				A285B1A31E9118CD0092BA77 /* LTExerciseInterfaceController.swift */,
+				A20598211E84691300452D61 /* LTInitialInterfaceController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A285B1A61E911D4D0092BA77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA32331E8EE2CC00C34E94 /* Calculators */,
+				A2DA32291E8EE2B200C34E94 /* LTRunningBuffer.swift */,
+				A2DA322F1E8EE2C300C34E94 /* LTCalculatorManager.swift */,
+				A2DA32281E8EE2B200C34E94 /* LTMotionManager.swift */,
+				A2DA32271E8EE2B200C34E94 /* LTWorkoutManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A285B1A71E911D780092BA77 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA32371E8EEC5200C34E94 /* LTWorkoutRowController.swift */,
+			);
+			name = Row;
+			sourceTree = "<group>";
+		};
+		A285B1A81E911D850092BA77 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A205980F1E84618A00452D61 /* NotificationController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		A285B1A91E911DB60092BA77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB3B361E7876EA00601DE4 /* LTViewController.swift */,
+				A22172F11E98D68C0034BD61 /* LTBaseViewController.swift */,
+				A22172F31E9957460034BD61 /* LTExerciseDetailTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A285B1AA1E911DC30092BA77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A22172E91E98306C0034BD61 /* CustomControls */,
+				A2BAF6821E96EB900096919A /* CoreData */,
+				A2DA32391E8EED4D00C34E94 /* LTExercise.swift */,
+				A2DA323E1E8EEE6600C34E94 /* LTExerciseType.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A285B1AB1E911DE10092BA77 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB3B381E7876EA00601DE4 /* Main.storyboard */,
+				A2EB3B3D1E7876EA00601DE4 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		A2BAF6821E96EB900096919A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAF6831E96EB9F0096919A /* Model */,
+				A2BAF67F1E96EB880096919A /* Model.xcdatamodeld */,
+				A2BAF6841E96EBEB0096919A /* NSPersistentStoreCoordinator+Extension.swift */,
+				A22172E71E982A5C0034BD61 /* ExerciseDataManager.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A2BAF6831E96EB9F0096919A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAF6861E96EEA60096919A /* Exercise+CoreDataClass.swift */,
+				A2BAF6871E96EEA60096919A /* Exercise+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A2DA32331E8EE2CC00C34E94 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA322E1E8EE2C300C34E94 /* LTCalculator.swift */,
+				A2DA322D1E8EE2C300C34E94 /* LTBicepsCalculator.swift */,
+				A22172F51E996DE00034BD61 /* LTHammerBicepsCalculator.swift */,
+			);
+			name = Calculators;
+			sourceTree = "<group>";
+		};
+		A2EB3B281E7876EA00601DE4 = {
+			isa = PBXGroup;
+			children = (
+				A2EB3B461E787CA500601DE4 /* Supporting Files */,
+				A2EB3B331E7876EA00601DE4 /* LifeTracker */,
+				A2EB3B4F1E7D6A6B00601DE4 /* LTHealthSupport */,
+				A20597F91E84618A00452D61 /* LifeTrackerWatches */,
+				A20598081E84618A00452D61 /* LifeTrackerWatches Extension */,
+				A2EB3B321E7876EA00601DE4 /* Products */,
+				124AC1A15BD9F241C0AFA2D5 /* Pods */,
+				856700454BF53061124B1138 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2EB3B321E7876EA00601DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB3B311E7876EA00601DE4 /* LifeTracker.app */,
+				A2EB3B4E1E7D6A6A00601DE4 /* LTHealthSupport.framework */,
+				A20597F81E84618A00452D61 /* LifeTrackerWatches.app */,
+				A20598041E84618A00452D61 /* LifeTrackerWatches Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2EB3B331E7876EA00601DE4 /* LifeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A285B1AA1E911DC30092BA77 /* Model */,
+				A285B1A91E911DB60092BA77 /* Controller */,
+				A2EB3B341E7876EA00601DE4 /* LTAppDelegate.swift */,
+			);
+			path = LifeTracker;
+			sourceTree = "<group>";
+		};
+		A2EB3B461E787CA500601DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A285B1AB1E911DE10092BA77 /* Storyboard */,
+				A2EB3B641E80658E00601DE4 /* LifeTracker.entitlements */,
+				A2EB3B401E7876EA00601DE4 /* Info.plist */,
+				A2EB3B3B1E7876EA00601DE4 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2EB3B4F1E7D6A6B00601DE4 /* LTHealthSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB3B611E7D6BC700601DE4 /* DataRetrievers */,
+				A2EB3B501E7D6A6B00601DE4 /* LTHealthSupport.h */,
+				A2EB3B511E7D6A6B00601DE4 /* Info.plist */,
+				A2EB3B671E80667B00601DE4 /* LTHealthKitManager.swift */,
+			);
+			path = LTHealthSupport;
+			sourceTree = "<group>";
+		};
+		A2EB3B611E7D6BC700601DE4 /* DataRetrievers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataRetrievers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A2EB3B4B1E7D6A6A00601DE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB3B521E7D6A6B00601DE4 /* LTHealthSupport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A20597F71E84618900452D61 /* LifeTrackerWatches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205981D1E84618A00452D61 /* Build configuration list for PBXNativeTarget "LifeTrackerWatches" */;
+			buildPhases = (
+				A20597F61E84618900452D61 /* Resources */,
+				A205981C1E84618A00452D61 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20598071E84618A00452D61 /* PBXTargetDependency */,
+			);
+			name = LifeTrackerWatches;
+			productName = LifeTrackerWatches;
+			productReference = A20597F81E84618A00452D61 /* LifeTrackerWatches.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A20598031E84618A00452D61 /* LifeTrackerWatches Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205981B1E84618A00452D61 /* Build configuration list for PBXNativeTarget "LifeTrackerWatches Extension" */;
+			buildPhases = (
+				A20598001E84618A00452D61 /* Sources */,
+				A20598011E84618A00452D61 /* Frameworks */,
+				A20598021E84618A00452D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LifeTrackerWatches Extension";
+			productName = "LifeTrackerWatches Extension";
+			productReference = A20598041E84618A00452D61 /* LifeTrackerWatches Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		A2EB3B301E7876EA00601DE4 /* LifeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EB3B431E7876EA00601DE4 /* Build configuration list for PBXNativeTarget "LifeTracker" */;
+			buildPhases = (
+				875E92B51FBD09B2C8CB5C70 /* [CP] Check Pods Manifest.lock */,
+				A2EB3B2D1E7876EA00601DE4 /* Sources */,
+				A2EB3B2E1E7876EA00601DE4 /* Frameworks */,
+				A2EB3B2F1E7876EA00601DE4 /* Resources */,
+				C2A0FB4D38FB89504E02E844 /* [CP] Embed Pods Frameworks */,
+				74416EBD6D64B2CD92B25A10 /* [CP] Copy Pods Resources */,
+				A2EB3B5A1E7D6A6B00601DE4 /* Embed Frameworks */,
+				A205981E1E84618A00452D61 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2EB3B541E7D6A6B00601DE4 /* PBXTargetDependency */,
+				A20598151E84618A00452D61 /* PBXTargetDependency */,
+			);
+			name = LifeTracker;
+			productName = LifeTracker;
+			productReference = A2EB3B311E7876EA00601DE4 /* LifeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2EB3B4D1E7D6A6A00601DE4 /* LTHealthSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EB3B571E7D6A6B00601DE4 /* Build configuration list for PBXNativeTarget "LTHealthSupport" */;
+			buildPhases = (
+				A2EB3B491E7D6A6A00601DE4 /* Sources */,
+				A2EB3B4A1E7D6A6A00601DE4 /* Frameworks */,
+				A2EB3B4B1E7D6A6A00601DE4 /* Headers */,
+				A2EB3B4C1E7D6A6A00601DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTHealthSupport;
+			productName = LTHealthSupport;
+			productReference = A2EB3B4E1E7D6A6A00601DE4 /* LTHealthSupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2EB3B291E7876EA00601DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sergey Spivakov";
+				TargetAttributes = {
+					A20597F71E84618900452D61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K6TTT6P9LJ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 1;
+							};
+						};
+					};
+					A20598031E84618A00452D61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K6TTT6P9LJ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+					A2EB3B301E7876EA00601DE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K6TTT6P9LJ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					A2EB3B4D1E7D6A6A00601DE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K6TTT6P9LJ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A2EB3B2C1E7876EA00601DE4 /* Build configuration list for PBXProject "LifeTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2EB3B281E7876EA00601DE4;
+			productRefGroup = A2EB3B321E7876EA00601DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2EB3B301E7876EA00601DE4 /* LifeTracker */,
+				A2EB3B4D1E7D6A6A00601DE4 /* LTHealthSupport */,
+				A20597F71E84618900452D61 /* LifeTrackerWatches */,
+				A20598031E84618A00452D61 /* LifeTrackerWatches Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A20597F61E84618900452D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20597FE1E84618A00452D61 /* Assets.xcassets in Resources */,
+				A20597FC1E84618A00452D61 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20598021E84618A00452D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20598121E84618A00452D61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B2F1E7876EA00601DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB3B3F1E7876EA00601DE4 /* LaunchScreen.storyboard in Resources */,
+				A2EB3B3C1E7876EA00601DE4 /* Assets.xcassets in Resources */,
+				A22172F01E98D5AE0034BD61 /* LTProgressIndicator.xib in Resources */,
+				A2EB3B3A1E7876EA00601DE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B4C1E7D6A6A00601DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74416EBD6D64B2CD92B25A10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeTracker/Pods-LifeTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		875E92B51FBD09B2C8CB5C70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A0FB4D38FB89504E02E844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeTracker/Pods-LifeTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20598001E84618A00452D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20598101E84618A00452D61 /* NotificationController.swift in Sources */,
+				A22172F61E996DE00034BD61 /* LTHammerBicepsCalculator.swift in Sources */,
+				A2DA32301E8EE2C300C34E94 /* LTBicepsCalculator.swift in Sources */,
+				A2DA322B1E8EE2B200C34E94 /* LTMotionManager.swift in Sources */,
+				A2DA32401E8EEE6600C34E94 /* LTExerciseType.swift in Sources */,
+				A2DA322A1E8EE2B200C34E94 /* LTWorkoutManager.swift in Sources */,
+				A205980E1E84618A00452D61 /* ExtensionDelegate.swift in Sources */,
+				A2DA32311E8EE2C300C34E94 /* LTCalculator.swift in Sources */,
+				A2DA323B1E8EED5400C34E94 /* LTExercise.swift in Sources */,
+				A2DA32381E8EEC5200C34E94 /* LTWorkoutRowController.swift in Sources */,
+				A20598221E84691300452D61 /* LTInitialInterfaceController.swift in Sources */,
+				A285B1A41E9118CD0092BA77 /* LTExerciseInterfaceController.swift in Sources */,
+				A2DA32321E8EE2C300C34E94 /* LTCalculatorManager.swift in Sources */,
+				A2DA322C1E8EE2B200C34E94 /* LTRunningBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B2D1E7876EA00601DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB3B371E7876EA00601DE4 /* LTViewController.swift in Sources */,
+				A22172EB1E9830A00034BD61 /* ExerciseTableViewCell.swift in Sources */,
+				A22172EE1E98D5930034BD61 /* LTProgressIndicator.swift in Sources */,
+				A22172F41E9957460034BD61 /* LTExerciseDetailTableViewController.swift in Sources */,
+				A2EB3B351E7876EA00601DE4 /* LTAppDelegate.swift in Sources */,
+				A22172E81E982A5C0034BD61 /* ExerciseDataManager.swift in Sources */,
+				A2BAF68A1E96EF0E0096919A /* NSPersistentStoreCoordinator+Extension.swift in Sources */,
+				A2BAF6811E96EB880096919A /* Model.xcdatamodeld in Sources */,
+				A2DA323A1E8EED4D00C34E94 /* LTExercise.swift in Sources */,
+				A2BAF6891E96EEA60096919A /* Exercise+CoreDataProperties.swift in Sources */,
+				A2DA323F1E8EEE6600C34E94 /* LTExerciseType.swift in Sources */,
+				A2BAF6881E96EEA60096919A /* Exercise+CoreDataClass.swift in Sources */,
+				A22172F21E98D68C0034BD61 /* LTBaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB3B491E7D6A6A00601DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB3B681E80667B00601DE4 /* LTHealthKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A20598071E84618A00452D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20598031E84618A00452D61 /* LifeTrackerWatches Extension */;
+			targetProxy = A20598061E84618A00452D61 /* PBXContainerItemProxy */;
+		};
+		A20598151E84618A00452D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20597F71E84618900452D61 /* LifeTrackerWatches */;
+			targetProxy = A20598141E84618A00452D61 /* PBXContainerItemProxy */;
+		};
+		A2EB3B541E7D6A6B00601DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2EB3B4D1E7D6A6A00601DE4 /* LTHealthSupport */;
+			targetProxy = A2EB3B531E7D6A6B00601DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A20597FA1E84618A00452D61 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A20597FB1E84618A00452D61 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		A2EB3B381E7876EA00601DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB3B391E7876EA00601DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			path = LifeTracker;
+			sourceTree = "<group>";
+		};
+		A2EB3B3D1E7876EA00601DE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB3B3E1E7876EA00601DE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = LifeTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A20598171E84618A00452D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				IBSC_MODULE = LifeTrackerWatches_Extension;
+				INFOPLIST_FILE = LifeTrackerWatches/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A20598181E84618A00452D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				IBSC_MODULE = LifeTrackerWatches_Extension;
+				INFOPLIST_FILE = LifeTrackerWatches/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A20598191E84618A00452D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "LifeTrackerWatches Extension/LifeTrackerWatches Extension.entitlements";
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				INFOPLIST_FILE = "LifeTrackerWatches Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A205981A1E84618A00452D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "LifeTrackerWatches Extension/LifeTrackerWatches Extension.entitlements";
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				INFOPLIST_FILE = "LifeTrackerWatches Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A2EB3B411E7876EA00601DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2EB3B421E7876EA00601DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2EB3B441E7876EA00601DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58669467BCDB14E399B16DEC /* Pods-LifeTracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LifeTracker/LifeTracker.entitlements;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				INFOPLIST_FILE = LifeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A2EB3B451E7876EA00601DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271CFFC23DBE3216365CF95A /* Pods-LifeTracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LifeTracker/LifeTracker.entitlements;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				INFOPLIST_FILE = LifeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LifeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A2EB3B581E7D6A6B00601DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LTHealthSupport/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LTHealthSupport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2EB3B591E7D6A6B00601DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K6TTT6P9LJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LTHealthSupport/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ss.LTHealthSupport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A205981B1E84618A00452D61 /* Build configuration list for PBXNativeTarget "LifeTrackerWatches Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20598191E84618A00452D61 /* Debug */,
+				A205981A1E84618A00452D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A205981D1E84618A00452D61 /* Build configuration list for PBXNativeTarget "LifeTrackerWatches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20598171E84618A00452D61 /* Debug */,
+				A20598181E84618A00452D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB3B2C1E7876EA00601DE4 /* Build configuration list for PBXProject "LifeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB3B411E7876EA00601DE4 /* Debug */,
+				A2EB3B421E7876EA00601DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB3B431E7876EA00601DE4 /* Build configuration list for PBXNativeTarget "LifeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB3B441E7876EA00601DE4 /* Debug */,
+				A2EB3B451E7876EA00601DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB3B571E7D6A6B00601DE4 /* Build configuration list for PBXNativeTarget "LTHealthSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB3B581E7D6A6B00601DE4 /* Debug */,
+				A2EB3B591E7D6A6B00601DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2BAF67F1E96EB880096919A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2BAF6801E96EB880096919A /* Model.xcdatamodel */,
+			);
+			currentVersion = A2BAF6801E96EB880096919A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2EB3B291E7876EA00601DE4 /* Project object */;
+}

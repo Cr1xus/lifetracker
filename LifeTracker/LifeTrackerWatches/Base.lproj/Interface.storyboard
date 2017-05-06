@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TFV-ww-jQ1">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--LTInitial-->
+        <scene sceneID="LcL-KE-NcT">
+            <objects>
+                <controller identifier="LTInitial" id="TFV-ww-jQ1" customClass="LTInitialInterfaceController" customModule="LifeTrackerWatches_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="vCI-3D-wp0">
+                            <items>
+                                <imageView width="1" height="66" alignment="left" image="lifetracker_logo" id="I1J-rp-h0c">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" layout="vertical" spacing="0.0" id="efQ-QW-qof">
+                            <items>
+                                <table alignment="left" id="Yqc-7E-Wlr">
+                                    <items>
+                                        <tableRow identifier="WorkoutRow" id="pR9-eQ-V24" customClass="LTWorkoutRowController" customModule="LifeTrackerWatches_Extension">
+                                            <group key="rootItem" width="1" height="30" alignment="left" spacing="6" id="IuF-dJ-pi5">
+                                                <items>
+                                                    <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="AdW-iy-py9">
+                                                        <color key="color" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </separator>
+                                                    <group height="1" alignment="left" layout="vertical" spacing="0.0" id="8ng-08-iKl">
+                                                        <items>
+                                                            <label width="1" alignment="left" verticalAlignment="center" text="Label" textAlignment="center" id="Uja-u9-F0h"/>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="exerciseNameLbl" destination="Uja-u9-F0h" id="Pyg-uh-js0"/>
+                                                <outlet property="separator" destination="AdW-iy-py9" id="CBb-kI-BiW"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="Yqc-7E-Wlr" id="9Lj-6f-PVW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="212" y="348"/>
+        </scene>
+        <!--LTExercise-->
+        <scene sceneID="z10-WP-eTE">
+            <objects>
+                <controller identifier="LTExercise" id="hKP-jI-07h" customClass="LTExerciseInterfaceController" customModule="LifeTrackerWatches_Extension">
+                    <items>
+                        <label alignment="left" text="Force touch to begin" id="CdG-d9-kCJ"/>
+                        <label alignment="left" text="Count:" id="RFE-mG-Y2J"/>
+                        <label alignment="left" text="0" id="nNp-pz-Lhj"/>
+                        <imageView width="50" height="50" alignment="center" hidden="YES" image="done" id="o3k-w6-0tW"/>
+                    </items>
+                    <menu key="menu" id="y3b-BM-jTO">
+                        <items>
+                            <menuItem title="Start" icon="accept" id="fN6-6I-PKN">
+                                <connections>
+                                    <action selector="startExercise" destination="hKP-jI-07h" id="aXr-BG-YgM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop" icon="decline" id="h4I-u8-kfz">
+                                <connections>
+                                    <action selector="stopExercise" destination="hKP-jI-07h" id="7lN-zE-fo0"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="countLbl" destination="nNp-pz-Lhj" id="hSY-Sw-sVG"/>
+                        <outlet property="doneImg" destination="o3k-w6-0tW" id="Bui-FA-kHi"/>
+                        <outlet property="titleLbl" destination="CdG-d9-kCJ" id="y8v-YA-Cdf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="453" y="349"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="LifeTrackerWatches" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
